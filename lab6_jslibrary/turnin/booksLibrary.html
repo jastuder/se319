@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="booksLibrary.js"></script>
+</head>
+
+<script>
+  var library = new Library("Lib");
+
+  library.shelves.push(new Shelf("ShelfOne", 1));
+  library.shelves.push(new Shelf("ShelfTwo", 2));
+  library.shelves.push(new Shelf("ShelfThree", 3));
+
+  // Shelf One Books
+  library.shelves[0].books.push(new Book("Book One", "No"));
+  library.shelves[0].books.push(new Book("Book Two", "No"));
+  library.shelves[0].books.push(new Book("Book Three", "Yes"));
+  library.shelves[0].books.push(new Book("Book Four", "No"));
+
+  // Shelf Two Books
+  library.shelves[1].books.push(new Book("Book Five", "Yes"));
+  library.shelves[1].books.push(new Book("Book Six", "No"));
+  library.shelves[1].books.push(new Book("Book Seven", "Yes"));
+  library.shelves[1].books.push(new Book("Book Eight", "No"));
+
+  // Shelf Three Books
+  library.shelves[2].books.push(new Book("Book Nine", "Yes"));
+  library.shelves[2].books.push(new Book("Book Ten", "No"));
+  library.shelves[2].books.push(new Book("Book Eleven", "Yes"));
+  library.shelves[2].books.push(new Book("Book Twelve", "No"));
+
+  console.log(library.isBookCheckedOut("Book Nine")); // Yes
+  console.log(library.isBookCheckedOut("
+    Book Ten")); // No
+  console.log(library.returnShelves());
+  library.createLibrary();
+
+</script>
+
+
+</html>
