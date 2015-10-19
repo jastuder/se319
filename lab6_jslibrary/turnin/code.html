@@ -1,0 +1,72 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="code.js"></script>
+
+<script>
+
+</script>
+</head>
+
+<!-- SIMPLE COMMENTS IN A LITTLE DIFFERENT FORM TO MAKE IT LOOK NICER -->
+
+<!--
+  Elements:
+    1) Header One
+    2) Paragraph
+    3) DIV
+    4) OrderedList
+    5) UnorderedList
+-->
+
+<!--
+  Effects:
+    1) Hide the paragraphs
+    2) Fade in Header One
+    3) Fade out Header One
+    4) Fade to 50% opacity with Ordered List
+    5) Hide the unordered list
+-->
+
+<!--
+  Events:
+    1) Click on paragraph for an alert
+    2) Click on header to change background to blue
+    3) Double click on unordered list to change squares to circles
+    4) Mouse over ordered list changes the font color to green, and Mouse out to red
+    5) Hovering over header change font size to 40 and bolds it
+-->
+
+<body>
+<h1> This is a header one </h1>
+<div class="test"> <p>This is a paragrah that is within a DIV and should have its style changed.</p></div>
+<div class="nottest"> <p>This is a paragraph that is not within a DIV and should not have its style changed.</p></div>
+<div class="test"> <p>This is a paragraph that is back within a DIV and should have its style changed like the first paragraph.</p></div>
+
+<input id="hideParagraph" type="button" value="Hide The Paragraphs" /> <br>
+<input id="showParagraph" type="button" value="Show The Paragraphs" /> <br>
+
+
+<ol>
+  <li>This</li>
+  <li>Is</li>
+  <li>An</li>
+  <li>Ordered</li>
+  <li>List</li>
+</ol>
+
+<ul>
+  <li>This</li>
+  <li>Is</li>
+  <li>An</li>
+  <li>Unordered</li>
+  <li>List</li>
+</ul>
+
+Test JQuery: <input id="testbutton" type="button" value="Click Me To Test!" />
+<br>
+Do Animations: <input id="doAnimation" type="button" value="Animate!" />
+
+</body>
+
+</html>

@@ -25,7 +25,7 @@ $('#clickb').click(function(){
 
 $('#updatepreb').click(function(){
     updatepre();
-    //myupdatepre(0);    // uncomment myupdatepre and review the changes
+    myupdatepre(0);    // uncomment myupdatepre and review the changes
 });
 
 /*************************************************
